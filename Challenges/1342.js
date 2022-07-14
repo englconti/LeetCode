@@ -13,10 +13,6 @@ const numberOfSteps = function(num) {
 }
 
 console.log(numberOfSteps(14))
-console.log(numberOfSteps(0))
-console.log(numberOfSteps(1))
-console.log(numberOfSteps(2))
-
 
 // Input: num = 14
 // Output: 6

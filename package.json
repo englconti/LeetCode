@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "eslint": "^8.22.0"
+  },
+  "name": "leetcode",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node Challenges/383.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/englconti/LeetCode.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/englconti/LeetCode/issues"
+  },
+  "homepage": "https://github.com/englconti/LeetCode#readme"
+}

@@ -18,3 +18,5 @@
 }
 
 console.log('return ==>', findNumbers([555,901,482,1771]))
+
+module.exports = findNumbers

@@ -1,4 +1,8 @@
 // Given a binary array nums, return the maximum number of consecutive 1's in the array.
+// Tests
+// Input: nums = [1,0,1,1,0,1]
+// Output: 2
+
 /**
  * @param {number[]} nums
  * @return {number}
@@ -15,8 +19,6 @@
     return maxCounter
 };
 
-// Tests
-// Input: nums = [1,0,1,1,0,1]
-// Output: 2
-
 console.log('result =>', findMaxConsecutiveOnes([1,0,1,1,0,1]))
+
+module.exports = findMaxConsecutiveOnes

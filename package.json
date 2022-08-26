@@ -6,10 +6,13 @@
   "description": "",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "mocha": "^10.0.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node Challenges/383.js"
+    "start": "node Challenges/383.js",
+    "test:coverage": "mocha"
   },
   "repository": {
     "type": "git",

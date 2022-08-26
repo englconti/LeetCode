@@ -22,10 +22,13 @@
         newArray.push(num * num)
     })
     const sortedArray = new Float64Array(newArray)
-
-    return sortedArray.sort()
+    const returnArray = []
+    
+    sortedArray.sort().forEach((num) => {
+        returnArray.push(Math.floor(num))
+    })
+    
+    return returnArray
 }
 
-console.log('sortedSquares ==>', sortedSquares([-4,-1,0,3,10]))
-
-
+module.exports = sortedSquares

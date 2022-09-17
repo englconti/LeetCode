@@ -47,7 +47,7 @@ const merge = function(nums1, m, nums2, n) {
     const unsortedArray = []
     for (let i = 0; i < m; i++) unsortedArray.push(nums1[i])
     for (let j = 0; j < n; j++) unsortedArray.push(nums2[j])
-    returnArray = unsortedArray.sort((a, b) => (a - b))
+    const returnArray = unsortedArray.sort((a, b) => (a - b))
 
     return returnArray
 }

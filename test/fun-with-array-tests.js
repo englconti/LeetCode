@@ -3,6 +3,7 @@ const findNumbers = require('../fun-with-arrays/find-numbers-with-even-number-of
 const findMaxConsecutiveOnes = require('../fun-with-arrays/max-consecutive-ones')
 const sortedSquares = require('../fun-with-arrays/squares-of-a-sorted-array')
 const duplicateZeros = require('../fun-with-arrays/duplicate-zeros')
+const merge = require('../fun-with-arrays/merge-sorted-array')
 
 describe('[MODULE] fun-with-array-tests', () => {
 
@@ -41,6 +42,19 @@ describe('[MODULE] fun-with-array-tests', () => {
             const inputArray = [1, 2, 3]
             const expectedReturn = [1, 2, 3]
             assert.deepEqual(duplicateZeros(inputArray), expectedReturn)
+        })
+    })
+
+    describe('[05]-merge-sorted-array', () => {
+
+        it('[05-01] merge should return [1, 2, 2, 3, 5, 6]', () => {
+            const nums1 = [1, 2, 3, 0, 0, 0]
+            const m = 3
+            const nums2 = [2, 5, 6]
+            const n = 3
+            const expectedReturn = [1, 2, 2, 3, 5, 6]
+            console.log('===answer===>', merge(nums1, m, nums2, n))
+            assert.deepEqual(merge(nums1, m, nums2, n), expectedReturn)
         })
     })
 })

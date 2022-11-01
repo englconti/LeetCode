@@ -53,6 +53,7 @@ const merge = function(nums1, m, nums2, n) {
 }
 
 // Leetcode working solution
+// eslint-disable-next-line no-unused-vars
 const merge2 = function(nums1, m, nums2, n) {
     while(n) {
         nums1[m++] = nums2[--n];

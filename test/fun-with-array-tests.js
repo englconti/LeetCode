@@ -5,6 +5,7 @@ const sortedSquares = require('../fun-with-arrays/squares-of-a-sorted-array')
 const duplicateZeros = require('../fun-with-arrays/duplicate-zeros')
 const merge = require('../fun-with-arrays/merge-sorted-array')
 const removeElement = require('../fun-with-arrays/remove-element')
+const removeDuplicates = require('../fun-with-arrays/remove-duplicates-from-sorted-array')
 
 describe('[MODULE] fun-with-array-tests', () => {
 
@@ -66,6 +67,13 @@ describe('[MODULE] fun-with-array-tests', () => {
 
         it('[06-02] merge should return 2', () => {
             assert.deepEqual(removeElement([3,2,2,3], 3), 2)
+        })
+    })
+
+    describe('[07]-remove-duplicates-from-sorted-array', () => {
+
+        it('[07-01] merge should return 5', () => {
+            assert.deepEqual(removeDuplicates([0,0,1,1,1,2,2,3,3,4], 2), 5)
         })
     })
 })

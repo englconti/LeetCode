@@ -6,6 +6,7 @@ const duplicateZeros = require('../fun-with-arrays/duplicate-zeros')
 const merge = require('../fun-with-arrays/merge-sorted-array')
 const removeElement = require('../fun-with-arrays/remove-element')
 const removeDuplicates = require('../fun-with-arrays/remove-duplicates-from-sorted-array')
+const checkIfExist = require('../fun-with-arrays/check-if-n-and-its-double-exist')
 
 describe('[MODULE] fun-with-array-tests', () => {
 
@@ -74,6 +75,15 @@ describe('[MODULE] fun-with-array-tests', () => {
 
         it('[07-01] merge should return 5', () => {
             assert.deepEqual(removeDuplicates([0,0,1,1,1,2,2,3,3,4], 2), 5)
+        })
+    })
+
+    describe('[08]-remove-duplicates-from-sorted-array', () => {
+
+        it('[08-01] should return right results', () => {
+            assert.deepEqual(checkIfExist([10, 2, 5, 3]), true)
+            assert.deepEqual(checkIfExist([3, 1, 7, 11]), false)
+            assert.deepEqual(checkIfExist([7, 1, 14, 11]), true)
         })
     })
 })

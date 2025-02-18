@@ -28,44 +28,24 @@
  */
 var rotate = function(nums, k) {
     if (nums.length <= 1) return nums 
-    // const numsMap = new Map()
-    // nums.forEach((num, i) => {
-    //     numsMap.set(i, num) // position and num
 
-    // })
+    console.log('remainer', k % nums.length)
+    const remainer = k % nums.length
 
     const numsMapToGo = new Map()
-    let pos
+    let position
     nums.forEach((num, i) => {
-        pos = i + k < nums.length ? i + k : i + k - nums.length 
-        numsMapToGo.set(pos, num)
+            position = i + remainer < nums.length ? i + remainer : i + remainer - nums.length
+            numsMapToGo.set(position, num)
     })
-    const newNums = []
+
     for (const [ind, value] of numsMapToGo) {
-        newNums[ind] = value
+        nums[ind] = value
     }
-    return newNums
 
-    // let position
-    // for (const [index, value] of numsMap) {
-    //     position = (index + k) > (nums.length - 1) ? (index + k) - (nums.length) : (index + k)
-    //     nums[position] = value
-    // }
-
-    // return nums
+    return nums
 }
 
 console.log(rotate([1,2,3,4,5,6,7], 3)) // [5,6,7,1,2,3,4]
 console.log(rotate([1,2], 3)) // [2,1]
-
-
-// nums =
-// [1,2]
-// k =
-// 3
-
-// Use Testcase
-// Output
-// [1,1,2]
-// Expected
-// [2,1]
+console.log(rotate([1,2,6], 3)) // [2,1]
